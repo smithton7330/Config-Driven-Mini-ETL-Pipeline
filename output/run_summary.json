@@ -1,0 +1,18 @@
+{
+  "run_timestamp_utc": "2026-09-23T05:26:50.423094+00:00",
+  "source": {
+    "path": "C:\\...\\input\\encounters.db",
+    "table": "encounters"
+  },
+  "counts": {
+    "total_input_rows": 12,
+    "dropped_by_filter": 2,
+    "candidate_rows": 10,
+    "clean_rows": 7,
+    "rejected_rows": 3
+  },
+  "rejected_by_reason": {
+    "missing_or_invalid_date_of_birth": 2,
+    "missing_department": 1
+  }
+}

@@ -1,0 +1,13 @@
+encounter_id,patient_id,patient_dob,status,encounter_type,department
+E1001,P001,1985-03-14,completed,outpatient,cardiology
+E1002,P002,1992-11-02,completed,inpatient,orthopaedics
+E1003,P003,1978-07-30,cancelled,outpatient,dermatology
+E1004,P004,1955-01-19,completed,inpatient,cardiology
+E1005,P005,2001-09-05,completed,outpatient,radiology
+E1006,P006,not_a_date,completed,outpatient,cardiology
+E1007,P007,1966-04-22,completed,inpatient,
+E1008,P008,1999-12-31,completed,outpatient,dermatology
+E1009,P009,1948-06-11,cancelled,inpatient,orthopaedics
+E1010,P010,2010-02-08,completed,outpatient,radiology
+E1011,P011,1975-08-17,completed,outpatient,cardiology
+E1012,P012,,completed,inpatient,orthopaedics

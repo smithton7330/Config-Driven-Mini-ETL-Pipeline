@@ -1,0 +1,8 @@
+# Run `docker compose up seed-db` once to (re)generate input/encounters.db
+# from the sample CSV in seed/. It's a one-shot job, not a long-running
+# service — it exits as soon as the database file is written.
+services:
+  seed-db:
+    build: ./seed
+    volumes:
+      - ./input:/data

@@ -1,0 +1,31 @@
+# Starter config 
+
+source:
+  path: input/encounters.db
+  format: sqlite
+  table: encounters
+
+transforms:
+  - rename:
+      patient_dob: date_of_birth
+
+  - cast:
+      date_of_birth: date
+
+  - filter: "status != 'cancelled'"
+
+  - derive:
+      field: age_band
+      expr: "bucket(age(date_of_birth), [0, 18, 40, 65, 120])"
+
+validation:
+  required_fields: [encounter_id, patient_id, date_of_birth, department]
+  allowed_values:
+    department: [cardiology, orthopaedics, dermatology, radiology]
+  on_failure: reject
+
+output:
+  path: output/encounters_clean.csv
+  format: csv
+  rejects_path: output/encounters_rejected.csv
+  summary_path: output/run_summary.json

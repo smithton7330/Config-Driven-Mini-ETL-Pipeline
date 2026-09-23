@@ -1,0 +1,4 @@
+encounter_id,patient_id,date_of_birth,status,encounter_type,department,age_band,date_of_birth_raw,reject_reasons
+E1006,P006,,completed,outpatient,cardiology,,not_a_date,missing or invalid date_of_birth
+E1007,P007,1966-04-22,completed,inpatient,,40-65,1966-04-22,missing department
+E1012,P012,,completed,inpatient,orthopaedics,,,missing or invalid date_of_birth
